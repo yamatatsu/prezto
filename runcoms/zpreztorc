@@ -30,16 +30,20 @@ zstyle ':prezto:*:*' color 'yes'
 # Set the Prezto modules to load (browse modules).
 # The order matters.
 zstyle ':prezto:load' pmodule \
-  'git' \
-  'environment' \
-  'terminal' \
-  'editor' \
-  'history' \
-  'directory' \
-  'spectrum' \
-  'utility' \
+  'autosuggestions' \
   'completion' \
-  'prompt'
+  'directory' \
+  'editor' \
+  'environment' \
+  'git' \
+  'history-substring-search' \
+  'history' \
+  'node' \
+  'prompt' \
+  'spectrum' \
+  'syntax-highlighting' \
+  'terminal' \
+  'utility'
 
 #
 # Autosuggestions
@@ -122,7 +126,7 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 # Set the working directory prompt display length.
 # By default, it is set to 'short'. Set it to 'long' (without '~' expansion)
 # for longer or 'full' (with '~' expansion) for even longer prompt display.
-# zstyle ':prezto:module:prompt' pwd-length 'short'
+zstyle ':prezto:module:prompt' pwd-length 'long'
 
 # Set the prompt to display the return code along with an indicator for non-zero
 # return codes. This is not supported by all prompts.
