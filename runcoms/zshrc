@@ -58,3 +58,8 @@ function peco-path() {
 
 zle -N peco-path
 bindkey '^f' peco-path # Ctrl+f で起動
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export DENO_INSTALL="/Users/yamamototatsuya/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
