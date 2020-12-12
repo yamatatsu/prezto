@@ -10,10 +10,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# export
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
-
 # alias
 alias ll='ls -al'
 alias g=git
@@ -58,8 +54,3 @@ function peco-path() {
 
 zle -N peco-path
 bindkey '^f' peco-path # Ctrl+f で起動
-
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-export DENO_INSTALL="/Users/yamamototatsuya/.deno"
-export PATH="$DENO_INSTALL/bin:$PATH"
-
